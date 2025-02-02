@@ -8,3 +8,11 @@ lsblk
 df -h
 
 curl -X POST -F 'master_pwd=LRLRmZHsv2D9jcnJ' -F 'name=Elsewedy_db_test' -F 'backup_format=zip' -o /media/your_username/FLASH_DRIVE/odoo_backup.zip http://10.10.156.33:8060/web/database/backup
+
+//select all database names
+sudo -u postgres psql -c "SELECT datname FROM pg_database;"
+//download from drive file
+pip install gdown
+
+gdown --folder https://drive.google.com/drive/folders/your-folder-id
+
