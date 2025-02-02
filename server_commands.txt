@@ -15,4 +15,4 @@ sudo -u postgres psql -c "SELECT datname FROM pg_database;"
 pip install gdown
 
 gdown --folder https://drive.google.com/drive/folders/your-folder-id
-
+https://drive.google.com/drive/folders/1HW8cUA66bdQ77Ud556x9X6lFIsJSDTHF?usp=sharing
