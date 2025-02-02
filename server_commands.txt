@@ -1,0 +1,4 @@
+sudo wget https://raw.githubusercontent.com/Yenthe666/InstallScript/17.0/odoo_install.sh
+sudo chmod +x odoo_install.sh
+sudo ./odoo_install.sh
+curl -X POST -F 'master_pwd=LRLRmZHsv2D9jcnJ' -F 'name=Elsewedy_db_test' -F 'backup_format=zip' -o /home/work  http://10.10.156.33:8060/web/database/backup
