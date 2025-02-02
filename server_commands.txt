@@ -2,3 +2,9 @@ sudo wget https://raw.githubusercontent.com/Yenthe666/InstallScript/17.0/odoo_in
 sudo chmod +x odoo_install.sh
 sudo ./odoo_install.sh
 curl -X POST -F 'master_pwd=LRLRmZHsv2D9jcnJ' -F 'name=Elsewedy_db_test' -F 'backup_format=zip' -o /home/work  http://10.10.156.33:8060/web/database/backup
+
+// flash disk put backup on it
+lsblk
+df -h
+
+curl -X POST -F 'master_pwd=LRLRmZHsv2D9jcnJ' -F 'name=Elsewedy_db_test' -F 'backup_format=zip' -o /media/your_username/FLASH_DRIVE/odoo_backup.zip http://10.10.156.33:8060/web/database/backup
